@@ -1,0 +1,409 @@
+/* 헤더 기본 레이아웃 */
+#header > .layout-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+/* 헤더 상단 라인 */
+#header > .layout-content > .line-primary {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+/* 메인 헤더 컨테이너 */
+#header > .layout-content > .line-primary > .main-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* 카테고리 아이콘 */
+#header > .layout-content > .line-primary > .main-header > .icon {
+    background-image: url("//static.coupangcdn.com/image/coupang/common/pc_header_img_sprite_180104.png");
+    width: 30px;
+    height: 30px;
+    background-position: -200px 0;
+    display: block;
+    margin-top: 30px;
+    flex-shrink: 0; /* 크기 고정 */
+    position: relative;
+    z-index: 5;
+}
+
+/* 카테고리 텍스트 링크 */
+#header > .layout-content > .line-primary > .main-header > .link {
+    display: block;
+    margin-top: 35px;
+    margin-right: 15px;
+    color: #333;
+    font-weight: bold;
+    flex-shrink: 0; /* 크기 고정 */
+    position: relative;
+    z-index: 5;
+    text-decoration: none;
+}
+
+/* 검색 폼 컨테이너 */
+#header > .layout-content > .line-primary > .main-header > .search {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0; /* flexbox 내에서 overflow 방지 */
+    margin-left: 10px;
+    position: relative;
+}
+
+/* 검색 헤더 영역 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-top: 1.625rem;
+}
+
+/* 쿠팡 로고 이미지 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .image {
+    width: 10.875rem;
+    height: 2.563rem;
+    padding-left: 0.525rem;
+}
+
+/* 검색창 컨테이너 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .search-bar {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: 0.125rem solid #4285f4;
+    height: 2.375rem;
+    min-width: 0;
+}
+
+/* 검색 카테고리 태그 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .search-bar > .tag {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-right: 0.063rem solid #ddd;
+    height: 100%;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    padding-left: 0.325rem;
+    padding-right: 0.325rem;
+    color: #333;
+}
+
+/* 태그 링크 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .search-bar > .tag > .link {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* 태그 아이콘 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .search-bar > .tag > .icon {
+    background-image: url("//img1a.coupangcdn.com/image/coupang/common/pc_header_img_sprite_180104.png");
+    background-position: -9.375rem -2rem;
+    width: 0.75rem;
+    height: 0.563rem;
+    transform: translateY(10%);
+    display: inline-block;
+    color: #333;
+}
+
+/* 드롭다운 컨테이너 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .search-bar > .tag > .drop-down {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    z-index: 100;
+}
+
+/* 드롭다운 리스트 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .search-bar > .tag > .drop-down > .list {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 0 0.5rem 0.0625rem #21212125;
+    gap: 1rem;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    left: -1rem;
+    background-color: white;
+}
+
+/* 드롭다운 항목 호버 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .search-bar > .tag > .drop-down > .list > .item:hover {
+    color: #4285f4;
+    text-decoration: underline;
+}
+
+/* 태그 호버 시 드롭다운 표시 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .search-bar > .tag:hover > .drop-down > .list {
+    display: flex;
+}
+
+/* 검색창 입력 필드 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .search-bar > .input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 0 0.5rem;
+}
+
+/* 마이크 아이콘 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .search-bar > .icon.mic {
+    background-image: url("//img1a.coupangcdn.com/image/coupang/common/ic_mic.png");
+    background-position: 0.2rem 0.09rem;
+    width: 1.625rem;
+    height: 1.625rem;
+    display: inline-block;
+    background-size: 1.25rem 3rem;
+    align-self: center;
+}
+
+/* 검색 아이콘 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .search-bar > .icon.search {
+    background-image: url("//static.coupangcdn.com/image/coupang/common/pc_header_img_sprite_180104.png");
+    display: inline-block;
+    background-position: -125px -75px;
+    width: 24px;
+    height: 27px;
+    align-self: center;
+}
+
+/* 유저 정보 영역 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* 마이쿠팡 영역 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .info > .my {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+/* 마이쿠팡 아이콘 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .info > .my > .icon {
+    background-image: url("//static.coupangcdn.com/image/coupang/common/pc_header_img_sprite_180104.png");
+    background-position: -111px -40px;
+    width: 1.875rem;
+    height: 1.875rem;
+    display: inline-block;
+}
+
+/* 장바구니 영역 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .info > .shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+/* 장바구니 아이콘 */
+#header > .layout-content > .line-primary > .main-header > .search > .search-header > .info > .shop > .icon {
+    background-image: url("//static.coupangcdn.com/image/coupang/common/pc_header_img_sprite_180104.png");
+    background-position: -110px 0;
+    width: 2.333rem;
+    height: 2.333rem;
+    display: inline-block;
+}
+
+/* 하단 카테고리 메뉴 스타일 */
+#header > .layout-content > .line-primary > .main-header > .search > .sub-category {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 1rem;
+    width: 100%;
+    overflow: visible;
+}
+
+/* 카테고리 컨테이너 */
+#header > .layout-content > .line-primary > .main-header > .search > .sub-category > .wow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 0 1.5rem;
+}
+
+/* 카테고리 리스트 */
+#header > .layout-content > .line-primary > .main-header > .search > .sub-category > .wow > .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: max-content;
+    transition: transform 0.3s ease;
+    padding: 10px 0;
+}
+
+/* 카테고리 항목 */
+#header > .layout-content > .line-primary > .main-header > .search > .sub-category > .wow > .list > .item {
+    margin: 0 0.625rem;
+    white-space: nowrap;
+}
+
+/* 카테고리 링크 */
+#header > .layout-content > .line-primary > .main-header > .search > .sub-category > .wow > .list > .item > .link {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #333;
+}
+
+/* 카테고리 이미지 */
+#header > .layout-content > .line-primary > .main-header > .search > .sub-category > .wow > .list > .item > .link > .image {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.3125rem;
+}
+
+/* 좌우 화살표 이미지 스타일 */
+.image-left, .image-right {
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.image-left {
+    left: 0;
+}
+
+.image-right {
+    right: 0;
+}
+
+/* 툴바 스타일 */
+#toolbar > .layout-content > .category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    background-color: #f5f5f5;
+    font-size: 12px;
+}
+
+#toolbar > .layout-content > .category > .left-menu,
+#toolbar > .layout-content > .category > .right-menu {
+    display: flex;
+}
+
+#toolbar > .layout-content > .category > .left-menu > .list,
+#toolbar > .layout-content > .category > .right-menu > .list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#toolbar > .layout-content > .category > .left-menu > .list > .item,
+#toolbar > .layout-content > .category > .right-menu > .list > .item {
+    position: relative;
+    margin: 0 8px;
+}
+
+#toolbar > .layout-content > .category > .left-menu > .list > .item.flag,
+#toolbar > .layout-content > .category > .right-menu > .list > .item.flag {
+    position: relative;
+}
+
+#toolbar > .layout-content > .category > .left-menu > .list > .item.flag > .flag-wrapper,
+#toolbar > .layout-content > .category > .right-menu > .list > .item.flag > .flag-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* 드롭다운 메뉴 */
+.flag-wrapper .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    z-index: 1000;
+    min-width: 120px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.flag-wrapper:hover .dropdown {
+    display: block;
+}
+
+.flag-wrapper .dropdown .drop-list {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+}
+
+.flag-wrapper .dropdown .drop-list .item {
+    padding: 5px 15px;
+}
+
+.flag-wrapper .dropdown .drop-list .item .link {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    display: block;
+}
+
+.flag-wrapper .dropdown .drop-list .item .link:hover {
+    color: #4285f4;
+    text-decoration: underline;
+}
+
+/* 링크 스타일 */
+.link {
+    text-decoration: none;
+    color: #333;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* 공통 스타일 */
+.layout-wrapper {
+    width: 100%;
+}
+
+.layout-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}

@@ -1,0 +1,116 @@
+#toolbar {
+    background-color: #f0f0f0;
+}
+#toolbar > .layout-content > .category {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 43rem;
+    white-space: nowrap;
+    padding-bottom: 0.325rem;
+    padding-top: 0.685rem;
+    z-index: 100;
+    font-size: 0.785rem;
+}
+
+
+#toolbar > .layout-content > .category > .left-menu > .list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.625rem;
+    cursor: pointer;
+}
+#toolbar > .layout-content > .category > .right-menu > .list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.625rem;
+    cursor: pointer;
+}
+#toolbar > .layout-content > .category > .left-menu > .list > .item.flag {
+    position: relative;
+    height: 100%;
+}
+#toolbar > .layout-content > .category > .left-menu > .list > .item.flag .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+}
+#toolbar > .layout-content > .category > .left-menu > .list > .item.flag > .flag-wrapper > .icon {
+    background-image: url("//static.coupangcdn.com/image/coupang/common/pc_header_img_sprite_180104.png");
+    background-position: -9.438rem -2rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    display: inline-block;
+}
+
+#toolbar > .layout-content > .category > .left-menu > .list > .item.flag .flag-wrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 100%;
+}
+#toolbar > .layout-content > .category > .left-menu > .list > .item.flag .drop-list {
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 0 0.5rem 0.0625rem #21212125;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: white;
+    transform: translateX(-1.8rem);
+    top: 100%;
+    margin-top: 0.325rem;
+}
+#toolbar > .layout-content > .category > .left-menu > .list > .item.flag .drop-list > .item {
+    font-size: 0.85rem;
+}
+#toolbar > .layout-content > .category > .left-menu > .list > .item.flag .drop-list > .item:hover {
+    color: #4285f4;
+    text-decoration: underline;
+}
+#toolbar > .layout-content > .category > .left-menu > .list > .item.flag:hover .drop-list {
+    display: flex;
+}
+
+#toolbar > .layout-content > .category > .right-menu > .list > .item.flag {
+    position: relative;
+    height: 100%;
+}
+#toolbar > .layout-content > .category > .right-menu > .list > .item.flag .dropdown {
+    position: absolute;
+    top: 100%;
+    left: -3rem;
+    z-index: 100;
+}
+#toolbar > .layout-content > .category > .right-menu > .list > .item.flag .flag-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+#toolbar > .layout-content > .category > .right-menu > .list > .item.flag .drop-list {
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 0 0.5rem 0.0625rem #21212125;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: white;
+    margin-top: 0.325rem;
+    align-items: flex-start;
+
+}
+#toolbar > .layout-content > .category > .right-menu > .list > .item.flag .drop-list > .item {
+    font-size: 0.85rem;
+    text-align: left;
+    width: 100%;
+}
+#toolbar > .layout-content > .category > .right-menu > .list > .item.flag .drop-list > .item:hover {
+    color: #4285f4;
+    text-decoration: underline;
+}
+#toolbar > .layout-content > .category > .right-menu > .list > .item.flag:hover .drop-list {
+    display: flex;
+}

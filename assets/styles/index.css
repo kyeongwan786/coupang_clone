@@ -1,0 +1,12 @@
+@import "./index.toolbar.css";
+@import "./index.header.css";
+
+body > .layout-wrapper > .layout-content {
+    width: 63.75rem;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+body > .layout-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
